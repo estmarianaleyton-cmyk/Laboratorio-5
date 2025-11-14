@@ -14,7 +14,19 @@
 - Identificar cambios en el balance autonómico mediante análisis temporal de la variabilidad de la frecuencia cardíaca (HRV).
 
 # **Parte A**
-***Actividad simpática y parasimpática del sistema nervioso autónomo***
+**Actividad simpática y parasimpática del sistema nervioso autónomo**
+
+El sistema nervioso simpático se origina en la médula espinal, específicamente en la región torácica y lumbar. Este es el responsable de preparar al cuerpo para la acción en situaciones de estrés o emergencia, conocido como el mecanimo de defensa y huida.
+
+Cuando se activa el sistema nervioso simpático, el cuerpo experimenta una serie de cambios fisiológicos. Algunos de ellos son:
+**- Aumento de la frecuencia cardiaca**
+
+**- Dilatación de las vias respiratorias**
+
+**- Aumento de la sudoración**
+
+Mientras que, el sistema nervioso parasimpático tiene su origen en el cerebro y en la región sacra de la médula espinal. Este se activa durante situaciones de calma y relajación. Su función principal es conservar energía y promover procesos de recuperación en el cuerpo.
+Cuando el sistema nervioso parasimpático se activa, el cuerpo experimenta una serie de cambios que promueven la relajación y la recuperación. Algunos de estos cambios incluyen:
 
 ***Efecto de la actividad simpática y parasimpática en la frecuencia cardíaca***
 
