@@ -14,7 +14,7 @@
 - Identificar cambios en el balance autonómico mediante análisis temporal de la variabilidad de la frecuencia cardíaca (HRV).
 
 # **Parte A**
-**Actividad simpática y parasimpática del sistema nervioso autónomo**
+## **Actividad simpática y parasimpática del sistema nervioso autónomo**
 
 El sistema nervioso simpático se origina en la médula espinal, específicamente en la región torácica y lumbar. Este es el responsable de preparar al cuerpo para la acción en situaciones de estrés o emergencia, conocido como el mecanimo de defensa y huida.
 
@@ -38,11 +38,11 @@ Cuando el sistema nervioso parasimpático se activa, el cuerpo experimenta una s
 
 Estas respuestas son esenciales para la restauración del equilibrio interno del cuerpo, permitiendo que se recupere y se mantenga en un estado óptimo de funcionamiento [1].
 
-***Efecto de la actividad simpática y parasimpática en la frecuencia cardíaca***
+## ***Efecto de la actividad simpática y parasimpática en la frecuencia cardíaca***
 
-***Variabilidad de la frecuencia cardíaca (HRV) obtenida a partir de la señal electrocardiográfica (ECG)***
+## ***Variabilidad de la frecuencia cardíaca (HRV) obtenida a partir de la señal electrocardiográfica (ECG)***
 
-***Diagrama de Poincaré como herramienta de análisis de la serie R-R***
+## ***Diagrama de Poincaré como herramienta de análisis de la serie R-R***
 
 # **Parte B**
 
