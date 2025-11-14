@@ -60,6 +60,9 @@ La variabilidad de la frecuencia cardíaca (HRV) es un reflejo directo de la mod
 ## **Código en Python (Google colab)**
 
 # **Parte C**
+
+# **Conclusiones**
+
 # **Bibiografia**
 [1]“Sistema Nervioso Simpático y Parasimpático: Anatomía y Funciones Clave - Fisioterapia y Rehabilitación”. fisioterapos.com - Blog de Información. Accedido el 14 de noviembre de 2025. [En línea]. Disponible: https://fisioterapos.com/sistema-nervioso-simpatico-y-parasimpatico-anatomia/
 
