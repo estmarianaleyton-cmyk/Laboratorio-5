@@ -52,7 +52,7 @@ La estimulación **simpática** produce esencialmente los efectos contrarios sob
 La estimulación simpática en el nódulo AV y en los haces 
 
 ## ***Variabilidad de la frecuencia cardíaca (HRV) obtenida a partir de la señal electrocardiográfica (ECG)***
-
+La variabilidad de la frecuencia cardíaca (HRV) es un reflejo directo de la modulación del sistema nervioso autónomo sobre el corazón. El aumento del tono parasimpático incrementa la variabilidad entre los intervalos R-R en el ECG, mientras que la activación simpática disminuye dicha variabilidad al generar una respuesta cronotrópica positiva. Por lo tanto, la HRV es un indicador sensible del equilibrio simpático-parasimpático y permite evaluar la función autonómica cardíaca en condiciones de reposo, estrés o actividad física. El análisis de la HRV obtenido del ECG es una herramienta fundamental en la fisiología cardiovascular, ya que permite inferir el estado autonómico y predecir alteraciones del sistema cardiovascular asociadas a predominio simpático, como la hipertensión, la dislipidemia, la diabetes o el sedentarismo.[2]
 ## ***Diagrama de Poincaré como herramienta de análisis de la serie R-R***
 
 # **Parte B**
@@ -60,3 +60,7 @@ La estimulación simpática en el nódulo AV y en los haces
 ## **Código en Python (Google colab)**
 
 # **Parte C**
+# **Bibiografia**
+[1]“Sistema Nervioso Simpático y Parasimpático: Anatomía y Funciones Clave - Fisioterapia y Rehabilitación”. fisioterapos.com - Blog de Información. Accedido el 14 de noviembre de 2025. [En línea]. Disponible: https://fisioterapos.com/sistema-nervioso-simpatico-y-parasimpatico-anatomia/
+
+[2]“Variabilidad de la frecuencia cardiaca como factor predictor de las enfermedades cardiovasculares”. Elsevier | Un negocio de análisis de información. Accedido el 14 de noviembre de 2025. [En línea]. Disponible: https://www.elsevier.es/es-revista-revista-colombiana-cardiologia-203-articulo-variabilidad-frecuencia-cardiaca-como-factor-S0120563319300683
