@@ -40,6 +40,17 @@ Estas respuestas son esenciales para la restauración del equilibrio interno del
 
 ## ***Efecto de la actividad simpática y parasimpática en la frecuencia cardíaca***
 
+El corazón está inervado por nervios simpáticos y parasimpáticos. Los nervios parasimpáticos (vagos) se distribuyen principalmente a los nódulos sinoauricular y auriculoventricular, y los nervios simpáticos se distribuyen en todas las regiones del corazón con una intensa representación en el músculo ventricular.
+
+La estimulación de los nervios **parasimpáticos** que llegan a los nodulos principalmente (los vagos) hace que se libere la hormona acetilcolina en las terminaciones nerviosas. Esta hormona tiene dos efectos principales sobre el corazón:
+
+**-Reduce la frecuencia del impulso que genera el nódulo sinusal.
+**-Reduce la excitabilidad de las fibras de la unión AV entre la musculatura auricular y el nódulo AV, retrasando de esta manera la transmisión del impulso cardíaco hacia los ventrículos.
+
+La estimulación **simpática** produce esencialmente los efectos contrarios sobre el corazón a los que produce la estimulación vagal, en esta se libera la hormona noradrenalina, la cual estimula los receptores β1-adrenérgicos, que median en los efectos sobre la frecuencia cardíaca aumentando la permeabilidad de la membrana a iones posi al aumento de voltaje y genera la velocidad del ascenso del potencial de membrana diastólico hacia el nivel umbral para la autoexcitación.
+
+La estimulación simpática en el nódulo AV y en los haces 
+
 ## ***Variabilidad de la frecuencia cardíaca (HRV) obtenida a partir de la señal electrocardiográfica (ECG)***
 
 ## ***Diagrama de Poincaré como herramienta de análisis de la serie R-R***
