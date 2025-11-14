@@ -14,7 +14,7 @@
 - Identificar cambios en el balance autonómico mediante análisis temporal de la variabilidad de la frecuencia cardíaca (HRV).
 
 # **Parte A**
-## **Actividad simpática y parasimpática del sistema nervioso autónomo**
+## ***Actividad simpática y parasimpática del sistema nervioso autónomo***
 
 El sistema nervioso simpático se origina en la médula espinal, específicamente en la región torácica y lumbar. Este es el responsable de preparar al cuerpo para la acción en situaciones de estrés o emergencia, conocido como el mecanimo de defensa y huida.
 
@@ -42,17 +42,27 @@ Estas respuestas son esenciales para la restauración del equilibrio interno del
 
 El corazón está inervado por nervios simpáticos y parasimpáticos. Los nervios parasimpáticos (vagos) se distribuyen principalmente a los nódulos sinoauricular y auriculoventricular, y los nervios simpáticos se distribuyen en todas las regiones del corazón con una intensa representación en el músculo ventricular.
 
-La estimulación de los nervios **parasimpáticos** que llegan a los nodulos principalmente (los vagos) hace que se libere la hormona acetilcolina en las terminaciones nerviosas. Esta hormona tiene dos efectos principales sobre el corazón:
+La estimulación de los nervios ***parasimpáticos*** que llegan a los nodulos principalmente (los vagos) hace que se libere la hormona acetilcolina en las terminaciones nerviosas. Esta hormona tiene dos efectos principales sobre el corazón:
 
-**-Reduce la frecuencia del impulso que genera el nódulo sinusal.
-**-Reduce la excitabilidad de las fibras de la unión AV entre la musculatura auricular y el nódulo AV, retrasando de esta manera la transmisión del impulso cardíaco hacia los ventrículos.
+**- Reduce la frecuencia del impulso que genera el nódulo sinusal.**
 
-La estimulación **simpática** produce esencialmente los efectos contrarios sobre el corazón a los que produce la estimulación vagal, en esta se libera la hormona noradrenalina, la cual estimula los receptores β1-adrenérgicos, que median en los efectos sobre la frecuencia cardíaca aumentando la permeabilidad de la membrana a iones posi al aumento de voltaje y genera la velocidad del ascenso del potencial de membrana diastólico hacia el nivel umbral para la autoexcitación.
+**- Reduce la excitabilidad de las fibras de la unión AV entre la musculatura auricular y el nódulo AV, retrasando de esta manera la transmisión del impulso cardíaco hacia los ventrículos.**
 
-La estimulación simpática en el nódulo AV y en los haces 
+
+La estimulación ***simpática*** produce esencialmente los efectos contrarios sobre el corazón a los que produce la estimulación vagal, en esta se libera la hormona noradrenalina, la cual estimula los receptores β1-adrenérgicos, que median en los efectos sobre la frecuencia cardíaca aumentando la permeabilidad de la membrana a iones positivos, esto provoca.
+
+**- Aumenta la frecuencia de descarga del nódulo sinusal.**
+
+**- Aumenta la velocidad de conducción, así como el nivel de excitabilidad de todas las porciones del corazón.**
+
+**- Aumenta mucho la fuerza de contracción de toda la musculatura cardíaca, tanto auricular como ventricular.** [2]
+
+
 
 ## ***Variabilidad de la frecuencia cardíaca (HRV) obtenida a partir de la señal electrocardiográfica (ECG)***
-La variabilidad de la frecuencia cardíaca (HRV) es un reflejo directo de la modulación del sistema nervioso autónomo sobre el corazón. El aumento del tono parasimpático incrementa la variabilidad entre los intervalos R-R en el ECG, mientras que la activación simpática disminuye dicha variabilidad al generar una respuesta cronotrópica positiva. Por lo tanto, la HRV es un indicador sensible del equilibrio simpático-parasimpático y permite evaluar la función autonómica cardíaca en condiciones de reposo, estrés o actividad física. El análisis de la HRV obtenido del ECG es una herramienta fundamental en la fisiología cardiovascular, ya que permite inferir el estado autonómico y predecir alteraciones del sistema cardiovascular asociadas a predominio simpático, como la hipertensión, la dislipidemia, la diabetes o el sedentarismo.[2]
+
+La variabilidad de la frecuencia cardíaca (HRV) es un reflejo directo de la modulación del sistema nervioso autónomo sobre el corazón. El aumento del tono parasimpático incrementa la variabilidad entre los intervalos R-R en el ECG, mientras que la activación simpática disminuye dicha variabilidad al generar una respuesta cronotrópica positiva. Por lo tanto, la HRV es un indicador sensible del equilibrio simpático-parasimpático y permite evaluar la función autonómica cardíaca en condiciones de reposo, estrés o actividad física. El análisis de la HRV obtenido del ECG es una herramienta fundamental en la fisiología cardiovascular, ya que permite inferir el estado autonómico y predecir alteraciones del sistema cardiovascular asociadas a predominio simpático, como la hipertensión, la dislipidemia, la diabetes o el sedentarismo.[3]
+
 ## ***Diagrama de Poincaré como herramienta de análisis de la serie R-R***
 
 # **Parte B**
