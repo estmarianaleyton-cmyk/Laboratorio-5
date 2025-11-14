@@ -76,4 +76,7 @@ La variabilidad de la frecuencia cardíaca (HRV) es un reflejo directo de la mod
 # **Bibiografia**
 [1]“Sistema Nervioso Simpático y Parasimpático: Anatomía y Funciones Clave - Fisioterapia y Rehabilitación”. fisioterapos.com - Blog de Información. Accedido el 14 de noviembre de 2025. [En línea]. Disponible: https://fisioterapos.com/sistema-nervioso-simpatico-y-parasimpatico-anatomia/
 
-[2]“Variabilidad de la frecuencia cardiaca como factor predictor de las enfermedades cardiovasculares”. Elsevier | Un negocio de análisis de información. Accedido el 14 de noviembre de 2025. [En línea]. Disponible: https://www.elsevier.es/es-revista-revista-colombiana-cardiologia-203-articulo-variabilidad-frecuencia-cardiaca-como-factor-S0120563319300683
+[2] H. medicus, “Estimulación simpática y parasimpática en el corazón,” Homo medicus, Sep. 14, 2025. https://homomedicus.com/efecto-de-la-estimulacion-simpatica-y-parasimpatica-sobre-la-frecuencia-cardiaca/ (accessed Nov. 14, 2025)
+
+‌
+[3]“Variabilidad de la frecuencia cardiaca como factor predictor de las enfermedades cardiovasculares”. Elsevier | Un negocio de análisis de información. Accedido el 14 de noviembre de 2025. [En línea]. Disponible: https://www.elsevier.es/es-revista-revista-colombiana-cardiologia-203-articulo-variabilidad-frecuencia-cardiaca-como-factor-S0120563319300683
