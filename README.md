@@ -65,6 +65,26 @@ La variabilidad de la frecuencia cardíaca (HRV) es un reflejo directo de la mod
 
 ## ***Diagrama de Poincaré como herramienta de análisis de la serie R-R***
 
+El diagrama de Poincaré, también llamado diagrama de dispersión, es uno de los métodos no lineales más utilizados para evaluar la variabilidad de la frecuencia cardíaca (VFC). Este gráfico se construye representando cada intervalo R-R en función del siguiente, de modo que cada punto del plano corresponde a un par de intervalos consecutivos (RRn , RRn+1). Esta visualización permite analizar la estructura interna de la serie temporal y la relación latido a latido. El diagrama de Poincaré ofrece varias ventajas:
+
+**- Permite identificar patrones no lineales en los intervalos R-R.**
+
+**- Facilita la observación directa de la variación instantánea entre latidos.**
+
+**- No requiere un preprocesamiento complejo.**
+
+**- Conserva una alta correlación con medidas espectrales de la VFC.**
+
+**- Puede revelar comportamientos dinámicos que no son evidentes con métodos lineales.**
+
+En condiciones normales, el diagrama produce una nube de puntos alineada aproximadamente con la línea de identidad, que corresponde a los casos donde la duración de un intervalo es igual a la del siguiente. Los puntos situados por encima de esta línea representan intervalos más largos que el anterior (RRn < RRn+1) mientras que los puntos situados por debajo indican intervalos más cortos (RRn > RRn+1)
+
+La forma de la nube puede aproximarse mediante una elipse cuyos ejes permiten cuantificar la variabilidad:
+
+**-SD1** representa la dispersión perpendicular a la línea identidad (eje corto). Este parámetro refleja cambios rápidos y variabilidad de corto plazo, asociados principalmente con la actividad parasimpática.
+
+**-SD2** corresponde a la dispersión a lo largo de la línea identidad (eje largo). Describe variaciones de largo plazo y está más ligado a la modulación simpática y a tendencias globales de la frecuencia cardíaca [4].
+
 # **Parte B**
 
 ## **Código en Python (Google colab)**
@@ -80,3 +100,6 @@ La variabilidad de la frecuencia cardíaca (HRV) es un reflejo directo de la mod
 
 ‌
 [3]“Variabilidad de la frecuencia cardiaca como factor predictor de las enfermedades cardiovasculares”. Elsevier | Un negocio de análisis de información. Accedido el 14 de noviembre de 2025. [En línea]. Disponible: https://www.elsevier.es/es-revista-revista-colombiana-cardiologia-203-articulo-variabilidad-frecuencia-cardiaca-como-factor-S0120563319300683
+
+[4]G. Escudero Prieto, “Procesamiento digital de la señal para el diagnóstico precoz de la Enfermedad de Parkinson,” 1library.com, Feb. 01, 2016. https://1library.co/document/z3dkjjp7-procesamiento-diagn%C3%B3stico-enfermedad-parkinson-caracterizaci%C3%B3n-espectral-variabilidad-card%C3%ADaco.html (accessed Nov. 17, 2025).
+‌
