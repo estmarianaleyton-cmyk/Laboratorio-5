@@ -441,25 +441,27 @@ print(f"CSI = {CSI_2:.4f}")
 
   </pre>
 
-##**Diagramas de Poincaré**
+## **Diagramas de Poincaré - Lectura**
+
+<img width="538" height="548" alt="image" src="https://github.com/user-attachments/assets/d0893e11-9abc-4ed6-9c4a-a178709597ae" />
+
+## **Diagramas de Poincaré - Lectura**
+
 <img width="545" height="548" alt="image" src="https://github.com/user-attachments/assets/e81306d8-5e4e-4c17-9afb-57ec4e0f6874" />
 
-##**RESULTADOS DEL POINCARÉ**
-Reposo:
+## **RESULTADOS DEL POINCARÉ**
+
+**Reposo:**
 SD1 = 0.0996  (actividad parasimpática)
 SD2 = 0.1591  (actividad simpática)
 CVI = -1.8001
 CSI = 1.5977
 
-Lectura:
+**Lectura:**
 SD1 = 0.0522  (actividad parasimpática)
 SD2 = 0.1019  (actividad simpática)
 CVI = -2.2745
 CSI = 1.9526
-
-
-
-
 
 
 # **Conclusiones**
