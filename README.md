@@ -303,7 +303,7 @@ La señal ECG filtrada se dividió en dos segmentos de 2 minutos y luego se iden
 
 - **SDNN (desviación estandar de los intervalos R-R):**
 
-- *Rango saludable o excepcional:**
+- *Rango saludable o excepcional:*
 
 - Mayor a 110 ms: excepcional
 
@@ -315,11 +315,25 @@ La señal ECG filtrada se dividió en dos segmentos de 2 minutos y luego se iden
 
 ## **Código en Python (Google colab)**
 <pre> ```
+media_RR1 = np.mean(RR1)
+media_RR2 = np.mean(RR2)
 
+sdnn1 = np.std(RR1)
+sdnn2 = np.std(RR2)
 
+print("\nParametros de la HVR en el dominio del tiempo")
+print("Segmento 1 (0–120 s):")
+print(f"    Media RR   : {media_RR1:.4f} s")
+print(f"    SDNN       : {sdnn1:.4f} s")
+
+print("Segmento 2 (120–240 s):")
+print(f"    Media RR   : {media_RR2:.4f} s")
+print(f"    SDNN       : {sdnn2:.4f} s")
   
   ```
 </pre>
+## **Resultados:**
+
 
 # **Parte C**
 
