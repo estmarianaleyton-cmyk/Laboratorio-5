@@ -378,6 +378,89 @@ print(f"    SDNN       : {sdnn2:.4f} s")
 En el primer segmento (0–120 s) se obtuvo una SDNN de 132.7 ms, un valor clasificado como excepcional, lo que refleja una excelente variabilidad de la frecuencia cardiaca y una alta capacidad de regulación del sistema nervioso autónomo. Para el segundo segmento (120–240 s), la SDNN fue de 80.9 ms, ubicándose dentro del rango saludable. Esto indica que, aunque la variabilidad cardiaca disminuyó en la segunda parte de la señal, aún se mantiene dentro de niveles fisiológicamente adecuados. 
 
 # **Parte C**
+##**Construcción del diagrama de Poincaré**
+
+<pre>
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Cargar intervalos RR de los dos segmentos
+RR1 = np.loadtxt("intervalos_RR_segmento1.txt")   # Reposo
+RR2 = np.loadtxt("intervalos_RR_segmento2.txt")   # Lectura
+
+# FUNCIONES PARA SD1, SD2, CVI, CSI
+
+def calcular_SD1_SD2(RR):
+    diffRR = np.diff(RR) # diferencias entre RR(n+1) - RR(n)
+    SD1 = np.sqrt((np.std(diffRR)**2) / 2)
+    SD2 = np.sqrt(2*(np.std(RR)**2) - SD1**2)
+    return SD1, SD2
+
+def calcular_CVI_CSI(SD1, SD2):
+    CVI = np.log10(SD1 * SD2)
+    CSI = SD2 / SD1
+    return CVI, CSI
+
+# Calcular parámetros para cada segmento
+SD1_1, SD2_1 = calcular_SD1_SD2(RR1)
+SD1_2, SD2_2 = calcular_SD1_SD2(RR2)
+
+CVI_1, CSI_1 = calcular_CVI_CSI(SD1_1, SD2_1)
+CVI_2, CSI_2 = calcular_CVI_CSI(SD1_2, SD2_2)
+
+# DIAGRAMA DE POINCARÉ
+def grafica_poincare(RR, titulo):
+    RR_n = RR[:-1]
+    RR_n1 = RR[1:]
+
+    plt.figure(figsize=(6,6))
+    plt.scatter(RR_n, RR_n1, alpha=0.6)
+    plt.title(titulo)
+    plt.xlabel("RR(n) [s]")
+    plt.ylabel("RR(n+1) [s]")
+    plt.grid(True)
+    plt.show()
+
+# Gráficas
+grafica_poincare(RR1, "Diagrama de Poincaré – Reposo (0–120 s)")
+grafica_poincare(RR2, "Diagrama de Poincaré – Lectura (120–240 s)")
+
+# MOSTRAR RESULTADOS
+print("RESULTADOS DEL POINCARÉ")
+print("Reposo:")
+print(f"SD1 = {SD1_1:.4f}  (actividad parasimpática)")
+print(f"SD2 = {SD2_1:.4f}  (actividad simpática)")
+print(f"CVI = {CVI_1:.4f}")
+print(f"CSI = {CSI_1:.4f}")
+print()
+print("Lectura:")
+print(f"SD1 = {SD1_2:.4f}  (actividad parasimpática)")
+print(f"SD2 = {SD2_2:.4f}  (actividad simpática)")
+print(f"CVI = {CVI_2:.4f}")
+print(f"CSI = {CSI_2:.4f}")
+
+  </pre>
+
+##**Diagramas de Poincaré**
+<img width="545" height="548" alt="image" src="https://github.com/user-attachments/assets/e81306d8-5e4e-4c17-9afb-57ec4e0f6874" />
+
+##**RESULTADOS DEL POINCARÉ**
+Reposo:
+SD1 = 0.0996  (actividad parasimpática)
+SD2 = 0.1591  (actividad simpática)
+CVI = -1.8001
+CSI = 1.5977
+
+Lectura:
+SD1 = 0.0522  (actividad parasimpática)
+SD2 = 0.1019  (actividad simpática)
+CVI = -2.2745
+CSI = 1.9526
+
+
+
+
+
 
 # **Conclusiones**
 
