@@ -299,7 +299,27 @@ plt.show()
 La señal ECG filtrada se dividió en dos segmentos de 2 minutos y luego se identificaron los picos R en cada segmento usando la función ***find_peaks***, que detecta los máximos más altos del ECG. Para asegurarse de que solo se detectara un pico R por latido, se estableció una altura mínima basada en el promedio y la desviación estándar de la señal, y un valor de distancia mínima de 300 muestras, lo que corresponde a 0.6 segundos a 500 Hz, evitando confundir pequeños picos cercanos con latidos reales. Después de detectar los picos, se calcularon los intervalos R-R midiendo el tiempo entre un pico R y el siguiente; esto se hizo restando las posiciones de los picos consecutivos y dividiendo por la frecuencia de muestreo para obtener los intervalos en segundos. 
 
 ## *Punto D*
+## **Comparación de los valores de los parámetros básicos de la HRV en el dominio del tiempo:**
 
+**- SDNN (desviación estandar de los intervalos R-R):** 
+
+- Rango saludable o excepcional:
+
+- Mayor a 110 ms: excepcional
+
+- 70 - 110 ms: saludable
+
+- Rango peocupante:
+  
+- Menor a 50 ms: alto riesgo [5] [6].
+
+## **Código en Python (Google colab)**
+<pre> ```
+
+
+  
+  ```
+</pre>
 
 # **Parte C**
 
