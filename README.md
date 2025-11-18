@@ -108,6 +108,8 @@ plt.title("Señal ECG tomada")
 plt.grid(True)
 plt.show()
 </pre>
+## ***Diagrama de flujo***
+![Imagen de WhatsApp 2025-11-18 a las 18 40 05_4f451446](https://github.com/user-attachments/assets/bec7824d-7999-4fbb-903b-4d07744f4680)
 
 ## **Grafica de la señal**
 <img width="846" height="395" alt="image" src="https://github.com/user-attachments/assets/6ea23a1c-16fb-41ab-8201-618bf29ab948" />
