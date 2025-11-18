@@ -378,7 +378,7 @@ print(f"    SDNN       : {sdnn2:.4f} s")
 En el primer segmento (0–120 s) se obtuvo una SDNN de 132.7 ms, un valor clasificado como excepcional, lo que refleja una excelente variabilidad de la frecuencia cardiaca y una alta capacidad de regulación del sistema nervioso autónomo. Para el segundo segmento (120–240 s), la SDNN fue de 80.9 ms, ubicándose dentro del rango saludable. Esto indica que, aunque la variabilidad cardiaca disminuyó en la segunda parte de la señal, aún se mantiene dentro de niveles fisiológicamente adecuados. 
 
 # **Parte C**
-##**Construcción del diagrama de Poincaré**
+## **Construcción del diagrama de Poincaré**
 
 <pre>
 import numpy as np
@@ -449,20 +449,30 @@ print(f"CSI = {CSI_2:.4f}")
 
 <img width="545" height="548" alt="image" src="https://github.com/user-attachments/assets/e81306d8-5e4e-4c17-9afb-57ec4e0f6874" />
 
-## **RESULTADOS DEL POINCARÉ**
+## **Resultados:**
 
 **Reposo:**
-SD1 = 0.0996  (actividad parasimpática)
-SD2 = 0.1591  (actividad simpática)
-CVI = -1.8001
-CSI = 1.5977
+- SD1 = 0.0996  (actividad parasimpática)
+- SD2 = 0.1591  (actividad simpática)
+- CVI = -1.8001
+- CSI = 1.5977
 
 **Lectura:**
-SD1 = 0.0522  (actividad parasimpática)
-SD2 = 0.1019  (actividad simpática)
-CVI = -2.2745
-CSI = 1.9526
+- SD1 = 0.0522  (actividad parasimpática)
+- SD2 = 0.1019  (actividad simpática)
+- CVI = -2.2745
+- CSI = 1.9526
 
+## **Interpretación:**
+
+Cuando la persona estuvo en reposo, su corazón mostraba una variabilidad más alta.
+Esto se ve en los valores más grandes de SD1 y SD2, que básicamente significan que el corazón estaba más “libre”, variando más de un latido a otro. Eso pasa cuando el cuerpo está tranquilo y el sistema parasimpático (el que promueve la relajación) tiene más control.
+
+En cambio, cuando empezó la lectura en voz alta, esa variabilidad bajó.
+SD1 cayó bastante, y SD2 también disminuyó, aunque no tanto como SD1. Eso es típico cuando el cuerpo pasa de un estado relajado a uno más activo. Leer en voz alta requiere atención, respiración distinta, un poco más de esfuerzo mental, y eso hace que el sistema simpático se active un poco más.
+
+Por eso el CSI sube: significa que el corazón se volvió más “ordenado” y menos variable, algo normal cuando uno se activa o se concentra.
+Y el CVI baja, lo cual simplemente confirma que la relajación disminuyó.
 
 # **Conclusiones**
 
