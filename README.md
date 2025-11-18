@@ -84,6 +84,33 @@ La forma de la nube puede aproximarse mediante una elipse cuyos ejes permiten cu
 **-SD1** representa la dispersión perpendicular a la línea identidad (eje corto). Este parámetro refleja cambios rápidos y variabilidad de corto plazo, asociados principalmente con la actividad parasimpática.
 
 **-SD2** corresponde a la dispersión a lo largo de la línea identidad (eje largo). Describe variaciones de largo plazo y está más ligado a la modulación simpática y a tendencias globales de la frecuencia cardíaca [4].
+## ***Diagrama de flujo***
+
+<img width="1760" height="1360" alt="_Diagrama de flujo -  Diagrama de flujo (3)" src="https://github.com/user-attachments/assets/3e1f4bd8-9b37-461f-8835-f5c16607a77b" />
+
+## ***Adquisición de la señal***
+
+## **Código en Python (Google colab)**
+<pre>
+voltaje = np.loadtxt("ECG_captura.txt")
+
+# Definir parámetros de muestreo
+fs = 500
+N = len(voltaje)
+t = np.arange(N) / fs  # eje de tiempo
+
+# Graficar
+plt.figure(figsize=(10,4))
+plt.plot(t, voltaje, label="Señal ECG tomada")
+plt.xlabel("Tiempo [s]")
+plt.ylabel("Voltaje [V]")
+plt.title("Señal ECG tomada")
+plt.grid(True)
+plt.show()
+</pre>
+
+## **Grafica de la señal**
+<img width="846" height="395" alt="image" src="https://github.com/user-attachments/assets/6ea23a1c-16fb-41ab-8201-618bf29ab948" />
 
 # **Parte B**
 ## *Punto C*
