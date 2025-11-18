@@ -382,12 +382,15 @@ En el primer segmento (0–120 s) se obtuvo una SDNN de 132.7 ms, un valor clasi
 # **Conclusiones**
 
 # **Bibiografia**
-[1]“Sistema Nervioso Simpático y Parasimpático: Anatomía y Funciones Clave - Fisioterapia y Rehabilitación”. fisioterapos.com - Blog de Información. Accedido el 14 de noviembre de 2025. [En línea]. Disponible: https://fisioterapos.com/sistema-nervioso-simpatico-y-parasimpatico-anatomia/
+[1] “Sistema Nervioso Simpático y Parasimpático: Anatomía y Funciones Clave - Fisioterapia y Rehabilitación”. fisioterapos.com - Blog de Información. Accedido el 14 de noviembre de 2025. [En línea]. Disponible: https://fisioterapos.com/sistema-nervioso-simpatico-y-parasimpatico-anatomia/
 
 [2] H. medicus, “Estimulación simpática y parasimpática en el corazón,” Homo medicus, Sep. 14, 2025. https://homomedicus.com/efecto-de-la-estimulacion-simpatica-y-parasimpatica-sobre-la-frecuencia-cardiaca/ (accessed Nov. 14, 2025)
 
-‌
-[3]“Variabilidad de la frecuencia cardiaca como factor predictor de las enfermedades cardiovasculares”. Elsevier | Un negocio de análisis de información. Accedido el 14 de noviembre de 2025. [En línea]. Disponible: https://www.elsevier.es/es-revista-revista-colombiana-cardiologia-203-articulo-variabilidad-frecuencia-cardiaca-como-factor-S0120563319300683
+[3] “Variabilidad de la frecuencia cardiaca como factor predictor de las enfermedades cardiovasculares”. Elsevier | Un negocio de análisis de información. Accedido el 14 de noviembre de 2025. [En línea]. Disponible: https://www.elsevier.es/es-revista-revista-colombiana-cardiologia-203-articulo-variabilidad-frecuencia-cardiaca-como-factor-S0120563319300683
 
-[4]G. Escudero Prieto, “Procesamiento digital de la señal para el diagnóstico precoz de la Enfermedad de Parkinson,” 1library.com, Feb. 01, 2016. https://1library.co/document/z3dkjjp7-procesamiento-diagn%C3%B3stico-enfermedad-parkinson-caracterizaci%C3%B3n-espectral-variabilidad-card%C3%ADaco.html (accessed Nov. 17, 2025).
+[4] G. Escudero Prieto, “Procesamiento digital de la señal para el diagnóstico precoz de la Enfermedad de Parkinson,” 1library.com, Feb. 01, 2016. https://1library.co/document/z3dkjjp7-procesamiento-diagn%C3%B3stico-enfermedad-parkinson-caracterizaci%C3%B3n-espectral-variabilidad-card%C3%ADaco.html (accessed Nov. 17, 2025).
+
+[5] M. M. Corrales, B. de la C. Torres, A. G. Esquivel, M. A. G. Salazar, and J. Naranjo Orellana, “Normal values of heart rate variability at rest in a young, healthy and active Mexican population,” Health, vol. 04, no. 07, pp. 377–385, 2012, doi: https://doi.org/10.4236/health.2012.47060.
+
+[6] “Heart rate variability (HRV) - What is normal HRV range,” Kubios, Sep. 23, 2024. https://www.kubios.com/blog/heart-rate-variability-normal-range/
 ‌
