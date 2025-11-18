@@ -225,6 +225,8 @@ Teniendo en cuenta la forma general de la ecuación en diferencias: y[n] = b0x[n
 Al sustituir los coeficientes la ecuación de diferencias quedaria: 
 
 **y[n] = 0.0021388x[n] + 0x[n-1] -0.00855519x[n-2] + 0x[n-3] + 0.01283279x[n-4] + 0x[n-5] -0.00855519x[n-6] + 0x[n-7] + 0.0021388x[n-8] -(-6.69800177y[n-1] + 19.67771811y[n-2] -33.14948678y[n-3] + 35.05040143y[n-4] -23.83043337y[n-5] + 10.17602978y[n-6] -2.49522749y[n-7] + 0.2690001y[n-8])**
+## ***Diagrama de flujo***
+<img width="1725" height="1928" alt="Tablero en blanco (1)" src="https://github.com/user-attachments/assets/d5e2311d-b155-4424-baa1-4d74672b3fc9" />
 
 ## **Explicación del filtro IIR:**
 
