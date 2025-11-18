@@ -441,7 +441,7 @@ print(f"CSI = {CSI_2:.4f}")
 
   </pre>
 
-## **Diagramas de Poincaré - Lectura**
+## **Diagramas de Poincaré - Reposo**
 
 <img width="538" height="548" alt="image" src="https://github.com/user-attachments/assets/d0893e11-9abc-4ed6-9c4a-a178709597ae" />
 
