@@ -205,23 +205,100 @@ Los 0.5 Hz eliminan la derivada de la línea base, el movimiento y respiración,
 
 El tipo Butterworth se seleccionó para evitar ondulaciones en la banda pasante y preservar la forma de onda cardiaca, esto es muy importante debido a que el ECG preserva la forma de la onda sin distorsiones, especialmente del complejo QRS. Y de orden 4, ya que nos permite realizar un buen rechazo de ruido y estabilidad computacional sin riesgo de oscilaciones ni distorsión, lo que lo hace adecuado para procesar señales ECG en tiempo real.
 
-El filtro se diseñó con la función butter de SciPy utilizando la representación en coeficientes directos (b y a) tras normalizar los bordes de banda respecto a la frecuencia de Nyquist (0.5·fs). Luego se verificó que el coeficiente a [0] fuera igual a 1 y, de no ser así, se normalizaron los arreglos para cumplir la forma estándar de la ecuación en diferencias. Finalmente, la señal se filtró, acumulando las contribuciones de muestras actuales y pasadas (parte numérica) y restando las contribuciones de salidas anteriores (parte recursiva), obteniendo así una señal ECG limpia dentro del intervalo útil de 0.5–40 Hz.
+El filtro se diseñó con la función ***butter*** de SciPy utilizando la representación en coeficientes directos (b y a) tras normalizar los bordes de banda respecto a la frecuencia de Nyquist (0.5·fs). Luego se verificó que el coeficiente a [0] fuera igual a 1 y, de no ser así, se normalizaron los arreglos para cumplir la forma estándar de la ecuación en diferencias. Finalmente, la señal se filtró, acumulando las contribuciones de muestras actuales y pasadas (parte numérica) y restando las contribuciones de salidas anteriores (parte recursiva), obteniendo así una señal ECG limpia dentro del intervalo útil de 0.5–40 Hz.
 
 ## **Division de la señal en dos segmentos y calculos de los intervalos de los picos R-R:**
 
 ## **Código en Python (Google colab)**
 <pre> ```
-señ_filt = np.loadtxt(filename)
+señ_filt = np.loadtxt("ecg_datos_filtrados.txt")
 N = len(señ_filt)
 t = np.arange(N) / fs
 duracion_total = N / fs
-print(f"Duración total: {duracion_total:.2f} s ({duracion_total/60:.2f} min)")
-
-
   
+# División de la señal en dos segmentos
+segmento1 = señ_filt[:int(120 * fs)]
+segmento2 = señ_filt[int(120 * fs):int(240 * fs)]
+t1 = np.arange(len(segmento1)) / fs
+t2 = np.arange(len(segmento2)) / fs + 120
+
+# Detección de picos R
+picos1 = find_peaks(segmento1, height=np.mean(segmento1)+0.5*np.std(segmento1), distancia=300) # Se utiliza el parámetro "distancia" para evitar detectar varios picos dentro de un mismo latido
+picos2 = find_peaks(segmento2, height=np.mean(segmento2)+0.5*np.std(segmento2), distancia=300)
+
+# Calculo de los intervalos R-R
+RR1 = np.diff(picos1) / fs  # en segundos
+RR2 = np.diff(picos2) / fs
+t_RR1 = t1[picos1[:-1]] + np.diff(t1[picos1]) / 2
+t_RR2 = t2[picos2[:-1]] + np.diff(t2[picos2]) / 2
+
+print(f"Segmento 1: {len(picos1)} picos R detectados")
+print(f"Promedio RR (seg 1): {np.mean(RR1):.3f} s -> {60/np.mean(RR1):.1f} lat/min")
+print(f"Segmento 2: {len(picos2)} picos R detectados")
+print(f"Promedio RR (seg 2): {np.mean(RR2):.3f} s -> {60/np.mean(RR2):.1f} lat/min")
+  ```
 </pre>
 
+## **Resultados:**
+***Segmento 1: 130 picos R detectados***
 
+***Promedio R-R: 0.930 segundos lo que corresponde a 64.5 lat/min***
+
+***Segmento 2: 144 picos R detectados***
+
+***Promedio R-R: 0.826 segundos lo que corresponde a 72.6 lat/min***
+
+## **Código en Python (Google colab)**
+<pre> ```
+plt.figure(figsize=(12, 6))
+
+# ECG Segmento 1
+plt.subplot(3, 1, 1)
+plt.plot(t1, segmento1, label='Segmento 1 (0–120 s)')
+plt.plot(t1[picos1], segmento1[picos1], 'r*', label='Picos R')
+plt.title("Segmento 1 – ECG filtrado con detección de picos R")
+plt.xlabel("Tiempo [s]")
+plt.ylabel("Voltaje [V]")
+plt.legend()
+plt.grid(True)
+
+# ECG Segmento 2
+plt.subplot(3, 1, 2)
+plt.plot(t2, segmento2, label='Segmento 2 (120–240 s)')
+plt.plot(t2[picos2], segmento2[picoss2], 'r*', label='Picos R')
+plt.title("Segmento 2 – ECG filtrado con detección de picos R")
+plt.xlabel("Tiempo [s]")
+plt.ylabel("Voltaje [V]")
+plt.legend()
+plt.grid(True)
+
+# Señales RR
+plt.subplot(3, 1, 3)
+plt.plot(t_RR1, RR1, 'b-o', label='RR Segmento 1')
+plt.plot(t_RR2, RR2, 'g-o', label='RR Segmento 2')
+plt.title("Variabilidad de los intervalos R–R")
+plt.xlabel("Tiempo [s]")
+plt.ylabel("Intervalo R–R [s]")
+plt.grid(True)
+plt.legend()
+
+plt.tight_layout()
+plt.show()
+  ```
+</pre>
+## **Gráfica primer segmento ECG**
+<img width="1335" height="221" alt="image" src="https://github.com/user-attachments/assets/da2ac8b5-8fbc-4d6b-b315-1a92a62d320c" />
+
+## **Gráfica segundo segmento ECG**
+<img width="1328" height="236" alt="image" src="https://github.com/user-attachments/assets/b76e6011-724c-49f8-acc1-fecd9659e4e9" />
+
+## **Gráfica variabilidad de los intervalos R-R**
+<img width="1335" height="216" alt="image" src="https://github.com/user-attachments/assets/385609e6-39b3-4925-9e3e-901ecd08b218" />
+
+## **Explicación detección de picos y calculo de los intervalos:**
+La señal ECG filtrada se dividió en dos segmentos de 2 minutos y luego se identificaron los picos R en cada segmento usando la función ***find_peaks***, que detecta los máximos más altos del ECG. Para asegurarse de que solo se detectara un pico R por latido, se estableció una altura mínima basada en el promedio y la desviación estándar de la señal, y un valor de distancia mínima de 300 muestras, lo que corresponde a 0.6 segundos a 500 Hz, evitando confundir pequeños picos cercanos con latidos reales. Después de detectar los picos, se calcularon los intervalos R-R midiendo el tiempo entre un pico R y el siguiente; esto se hizo restando las posiciones de los picos consecutivos y dividiendo por la frecuencia de muestreo para obtener los intervalos en segundos. 
+
+## *Punto D*
 
 
 # **Parte C**
