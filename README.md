@@ -301,15 +301,15 @@ La señal ECG filtrada se dividió en dos segmentos de 2 minutos y luego se iden
 ## *Punto D*
 ## **Comparación de los valores de los parámetros básicos de la HRV en el dominio del tiempo:**
 
-**- SDNN (desviación estandar de los intervalos R-R):** 
+- **SDNN (desviación estandar de los intervalos R-R):**
 
-- Rango saludable o excepcional:
+- *Rango saludable o excepcional:**
 
 - Mayor a 110 ms: excepcional
 
 - 70 - 110 ms: saludable
 
-- Rango peocupante:
+- *Rango peocupante:*
   
 - Menor a 50 ms: alto riesgo [5] [6].
 
