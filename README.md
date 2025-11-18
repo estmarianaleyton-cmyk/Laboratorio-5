@@ -476,6 +476,14 @@ Y el CVI baja, lo cual simplemente confirma que la relajación disminuyó.
 
 # **Conclusiones**
 
+La práctica logró identificar cambios en el balance autonómico mediante el análisis temporal y no lineal de la variabilidad de la frecuencia cardíaca (HRV). Tras adquirir y filtrar una señal ECG de 4 minutos, se analizaron dos condiciones (reposo y lectura en voz alta) mediante la detección de picos R y el cálculo de métricas R–R, SDNN, SD1, SD2, CSI y CVI.
+
+En reposo se observó una mayor variabilidad cardíaca: media R–R de 0.93 s y SDNN de 132.7 ms, valores altos que reflejan predominio parasimpático. Durante la lectura, la media R–R disminuyó a 0.826 s y la SDNN a 80.9 ms, indicando mayor activación simpática y menor variabilidad global.
+El análisis del diagrama de Poincaré confirmó esta tendencia: SD1 variabilidad a corto plazo y actividad parasimpática, se redujo casi a la mitad, mientras SD2 también disminuyó. El aumento del CSI y la disminución del CVI muestran un desplazamiento simpático más dominante durante la tarea.
+Estos resultados son coherentes con la fisiología, la lectura en voz alta aumenta la atención y modifica la respiración, reduciendo la actividad del nervio vago del corazon, y elevando la frecuencia cardiaca. El filtrado aplicado permitió conservar la morfología del QRS, garantizando detecciones R fiables. Sin embargo, existen limitaciones: detección de picos dependiente de umbrales heurísticos(reglas fijas), muestra pequeña de una sola persona, y posibles efectos del filtrado IIR.
+
+Finalmente, el procedimiento permitió identificar de manera consistente el cambio autonómico entre reposo y lectura, mostrando disminución de la modulación parasimpática y aumento relativo del tono simpático.
+
 # **Bibiografia**
 [1] “Sistema Nervioso Simpático y Parasimpático: Anatomía y Funciones Clave - Fisioterapia y Rehabilitación”. fisioterapos.com - Blog de Información. Accedido el 14 de noviembre de 2025. [En línea]. Disponible: https://fisioterapos.com/sistema-nervioso-simpatico-y-parasimpatico-anatomia/
 
