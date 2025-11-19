@@ -380,6 +380,8 @@ print(f"    SDNN       : {sdnn2:.4f} s")
 ## **Interpretación de los resultados:**
 
 En el primer segmento (0–120 s) se obtuvo una SDNN de 132.7 ms, un valor clasificado como excepcional, lo que refleja una excelente variabilidad de la frecuencia cardiaca y una alta capacidad de regulación del sistema nervioso autónomo. Para el segundo segmento (120–240 s), la SDNN fue de 80.9 ms, ubicándose dentro del rango saludable. Esto indica que, aunque la variabilidad cardiaca disminuyó en la segunda parte de la señal, aún se mantiene dentro de niveles fisiológicamente adecuados. 
+## ***Diagrama de flujo***
+<img width="573" height="1913" alt="Tablero en blanco (2)" src="https://github.com/user-attachments/assets/a25b97c4-d136-4f7a-bf87-94a48258a722" />
 
 # **Parte C**
 ## **Construcción del diagrama de Poincaré**
