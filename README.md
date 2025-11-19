@@ -468,6 +468,8 @@ print(f"CSI = {CSI_2:.4f}")
 - SD2 = 0.1019  (actividad simpática)
 - CVI = -2.2745
 - CSI = 1.9526
+  ## ***Diagrama de flujo***
+<img width="631" height="1759" alt="Tablero en blanco (3)" src="https://github.com/user-attachments/assets/e63758cb-5fe2-4b9a-a714-230bafc31617" />
 
 ## **Interpretación:**
 
